@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LabWeb.Models;
+using System;
 
 namespace LabConsole
 {
@@ -6,7 +7,13 @@ namespace LabConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var tw = new TwentyWays();
+            tw.GenerateWord();
+
+            Console.WriteLine($"result : {tw}");
+
+
         }
     }
 }
